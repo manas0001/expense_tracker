@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <link rel="stylesheet" type="text/css" href="index.css"/>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Gochi+Hand&family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="expense_form_container">
+            
+            <form class="expense_from" onsubmit="addNewExpense(event)">
+                <div class="form_items">
+                    <label for="expenseAmount">Enter Amount</label>
+                    <input type="expenseAmount" name="expenseAmount" required>
+                </div>
+                <div class="form_items">
+                    <label for="description">Enter description</label>
+                    <input name="description" required>
+                </div>
+                <div class="form_items">
+                    <label for="category">Choose a category</label>
+                    <select name="category" >
+                        <option value="fuel">fuel</option>
+                        <option value="food">food</option>
+                        <option value="electricity">electricity</option>
+                        <option value="movie">movie</option>
+                    </select>
+                </div>
+                <button class="add_expense_btn">+</button>
+            </form>
+            
+        </div>
+        <div class="premium_btn">
+            <button class="premium_button" id="premium_btn">Buy Premium</button>
+            <div class="Premi_umuser" id="message"></div>
+        </div>
+
+        <div class="expense_show_container">
+
+            <div class="expense" id="expense">
+
+                <form class="expense_show_form" >
+
+                    <div class="expense_header">
+                        <p>Amount</p>
+                        <p>Description</p>
+                        <p>Category</p>
+                        <p>Remove expense</p>
+
+                    </div>
+
+                    <div class="expense_item_cont" id="expense_item_cont">
+
+                    </div>
+                 </form>
+
+            </div>
+            
+        </div>
+        <div class="logout" id="logout">
+            <button class="logout_button" id="logout_button">logout</button>
+
+        </div>
+    </div>
+    
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

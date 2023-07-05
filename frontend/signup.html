@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="signup.css"/> 
+</head>
+<body>
+    <div class="container">
+        <form class="formCont" onsubmit="signup(event)">
+            <h2 style="font-size:100%" class="signuptitle">SIGNUP </h2>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter email" required name="email" >
+            <label for="password">Password</label>
+            <input placeholder="Enter password" name="pwd" required>
+            <button class="submitbtn">Submit</button>
+            <p class="have_account">have account <a href="./login/login.html">login</a></p>
+            
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css"/> 
+</head>
+<body>
+    <div class="container">
+        <form class="formCont" onsubmit="login(event)">
+            <h2 style="font-size:100%" class="logintitle">Login </h2>
+            <label for="email">Email</label>
+            <input type="email" placeholder="enter your email" name="email">
+            <label for="password">Password</label>
+            <input type="password" placeholder="enter password" name="password">
+            <button class="loginbtn">Login</button>
+            <p class="new_user">New User - <a href="../signup.html">Signup</a></p>
+            <P class="forgot_pass">Forgot Password - <a href="../forgotpass.html">Click</a></P>
+            
+        </form>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
